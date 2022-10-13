@@ -1,0 +1,147 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    background: #000;
+}
+
+.card-heading {
+    color: #fff;
+    font-weight: 700;
+    margin-block: 20px 5px;
+}
+
+.card-text {
+    color: hsl(217deg, 12%, 63%);
+    font-size: 0.9rem;
+    margin-block: 5px 20px;
+}
+
+.rating-card {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+.rating-state,
+.thanks-state {
+    background: hsl(213deg, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.rating-star {
+    background: hsl(213deg 21% 28%);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-star img {
+    height: 12px;
+}
+
+.rating-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background: hsl(213deg 21% 28%);
+    color: #fff;
+}
+
+.rating-button:hover {
+    cursor: pointer;
+    background: hsl(25, 97%, 53%);
+}
+
+.selected {
+    background: hsl(25, 97%, 53%);
+}
+
+.submit {
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 1.rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    background: hsl(25, 97%, 53%);
+    color: #FFF;
+}
+
+.submit:hover {
+    cursor: pointer;
+    color: hsl(25, 97%, 53%);
+    background: white;
+}
+
+.small-warning {
+    color: red;
+    text-align: center;
+    margin-block: 10px;
+    ;
+}
+
+.display-none {
+    display: none;
+}
+
+.thanks-state {
+    text-align: center;
+}
+
+.thanks-state img {
+    height: 70px;
+    margin-block-end: 20px;
+}
+
+.thanks-state p:not(.card-text) {
+    background: hsl(213deg 21% 28%);
+    color: hsl(25, 97%, 53%);
+    padding: 7px 20px 4px 20px;
+    font-size: .9rem;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+}
